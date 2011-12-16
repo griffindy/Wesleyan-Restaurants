@@ -10,4 +10,8 @@ class RestaurantController < ApplicationController
   def show
     @restaurant = Restaurant.find(:first, :conditions => {:name => params[:id]})
   end
+
+  def all
+  end
+
 end
