@@ -1,19 +1,8 @@
-<html>
-	<head>
-			<meta http-equiv="Content-type" content="text/html; charset=utf-8">
-			<title>All Restaurants</title>
-			
-	</head>
-
-	<body>
-		<div id="main">
-				<% @restaurant.each do |restaurant| %>
-					<ul>
-						<li>Restaurant: <%= restaurant.name %><br>
-						Address: <%= restaurant.address %></li>
-					</ul>
-				<% end %>
-		</div>        
-	</body>
-
-</html>
+<div id="main">
+  <% @restaurant.each do |restaurant| %>
+    <ul>
+            <li>Restaurant: <%= restaurant.name %><br>
+            Address: <%= restaurant.address %></li>
+    </ul>
+  <% end %>
+</div>        
