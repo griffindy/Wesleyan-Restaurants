@@ -57,4 +57,6 @@ WesleyanRestaurants::Application.routes.draw do
   # match ':controller(/:action(/:id(.:format)))'
 
   resources :restaurant
+
+  root :to => "restaurant#index"
 end
